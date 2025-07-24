@@ -32,3 +32,16 @@ variable "private_subnet_cidrs" {
   description = "List of CIDR blocks for private subnets"
   type        = list(string)
 }
+
+variable "cluster_name" {
+  description = "The name of the EKS cluster"
+  type        = string
+  default     = "dev-eks-cluster"
+}
+
+variable "project_name" {
+  description = "The name of the project"
+  type        = string
+  default     = "EKS"
+  
+}
